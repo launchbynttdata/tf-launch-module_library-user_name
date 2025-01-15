@@ -10,26 +10,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-variable "length" {
-  description = "The number of words in the random name."
-  type        = number
-  default     = 2
-}
-
-variable "separator" {
-  description = "The separator to use between words in the random name."
-  type        = string
-  default     = "-"
-}
-
-variable "prefix" {
-  description = "The prefix to add to the random name."
-  type        = string
-  default     = null
-}
-
-variable "keepers" {
-  description = "Arbitrary map of values that, when changed, will trigger recreation of resource."
-  type        = map(any)
-  default     = null
+output "name" {
+  description = "The generated user name"
+  value       = module.user_name.name
 }
