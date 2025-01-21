@@ -11,7 +11,7 @@
 // limitations under the License.
 
 variable "length" {
-  description = "The number of words in the random name."
+  description = "The length of the random pet name."
   type        = number
   default     = 2
 }
@@ -25,11 +25,5 @@ variable "separator" {
 variable "prefix" {
   description = "The prefix to add to the random name."
   type        = string
-  default     = null
-}
-
-variable "keepers" {
-  description = "Arbitrary map of values that, when changed, will trigger recreation of resource."
-  type        = map(any)
   default     = null
 }

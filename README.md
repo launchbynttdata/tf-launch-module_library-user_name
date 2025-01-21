@@ -104,3 +104,42 @@ If `make check` target is successful, developer is good to commit the code to pr
 - runs `conftests`. `conftests` make sure `policy` checks are successful.
 - runs `terratest`. This is integration test suit.
 - runs `opa` tests
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.6 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| <a name="provider_random"></a> [random](#provider\_random) | 3.6.3 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [random_pet.name](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/pet) | resource |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_length"></a> [length](#input\_length) | The number of words in the random name. | `number` | `2` | no |
+| <a name="input_separator"></a> [separator](#input\_separator) | The separator to use between words in the random name. | `string` | `"-"` | no |
+| <a name="input_prefix"></a> [prefix](#input\_prefix) | The prefix to add to the random name. | `string` | `null` | no |
+| <a name="input_keepers"></a> [keepers](#input\_keepers) | Arbitrary map of values that, when changed, will trigger recreation of resource. | `map(any)` | `null` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| <a name="output_name"></a> [name](#output\_name) | The generated user name |
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
